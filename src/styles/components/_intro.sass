@@ -1,0 +1,90 @@
+.intro
+  padding: 0
+  
+  &__wrap
+    position: relative
+    background: url('../img/intro-bg.jpg') no-repeat top
+    background-size: cover
+    padding: 120px 0
+    z-index: 0
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(#1C2331, 0.5)
+
+.slider
+  position: relative
+  text-align: center
+  color: #ffffff
+  z-index: 1
+
+  &__item 
+    padding: 20px 0
+    outline: none
+    
+  &__title
+    text-transform: uppercase
+    letter-spacing: 2px
+    margin: 0
+    margin-bottom: 15px
+
+  &__text
+    display: block
+    max-width: 460px
+    font-size: 14px
+    color: #dddddd
+    line-height: 1.3em
+    letter-spacing: 1px
+    margin: 0 auto
+    margin-bottom: 35px
+
+  &__btn
+    color: #ffffff
+
+    &:hover
+      border: 2px solid #ffffff
+
+      &::after
+        color: $sun-color
+        background-color: #ffffff    
+
+.slick
+
+  &-btn
+    position: absolute
+    top: 40%  
+    width: 30px
+    height: 35px
+    font-size: 20px
+    color: #ffffff
+    border: 1px solid #ffffff
+    outline: none
+    background: transparent
+    z-index: 2
+
+    &:hover
+      cursor: pointer
+      background: $sun-color
+
+
+  &-prev
+    left: 0
+
+  &-next
+    right: 0  
+
+@media (max-width: 875px)
+  .slider
+    &__title
+      font-size: 16px
+      
+  .slick
+    &-prev
+      left: -40px
+    &-next
+      right: -40px

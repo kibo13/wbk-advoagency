@@ -1,0 +1,115 @@
+body 
+  margin: 0
+  padding: 0
+  +light
+
+a
+  text-decoration: none
+
+li
+  list-style-type: none
+
+.container
+  width: 70%
+  margin: auto
+  
+.section 
+  width: 100%
+  padding-top: 60px
+  padding-bottom: 30px
+
+  &__headline 
+    position: relative
+    display: flex
+    flex-direction: column
+    margin-bottom: 50px
+
+    &::before
+      content: ''
+      position: absolute
+      top: 35px 
+      left: 0
+      background: $sun-color
+      width: 80px
+      height: 3px
+
+  &__title
+    padding-left: 100px
+    font-size: 24px
+    letter-spacing: 1px
+  
+  &__descrip
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  
+  &__text
+    max-width: 460px
+    font-size: 14px
+    padding-left: 100px
+  
+  &__btn
+    display: inline-block
+    padding: 7px 30px
+    font-size: 14px
+    color: $text-color  
+    border: 2px solid #e6e6e6
+    transition: .3s
+
+    &:hover
+      color: $sun-color
+      border: 2px solid $sun-color
+
+.btn
+  position: relative
+  padding: 7px 20px
+  padding-right: 40px
+  +bold
+  font-size: 14px
+  color: $text-color
+  border: 2px solid $sun-color
+  transition: .3s
+
+  &::after
+    content: '›'
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    padding: 0px 5px
+    font-size: 25px
+    line-height: 25px
+    color: #ffffff
+    background-color: $sun-color
+    transition: .3s
+  
+  &:hover
+    border: 2px solid $text-color
+
+    &::after
+      color: $sun-color
+      background-color: $text-color
+
+@media (max-width: 1024px)
+  .section 
+    &__headline
+      align-items: center
+      &::before
+        display: none
+    
+    &__title
+      text-align: center
+
+    &__descrip
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+
+    &__title,
+    &__text
+      padding-left: 0
+      
+    &__btn
+      margin-top: 15px
+
