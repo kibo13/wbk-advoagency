@@ -1,7 +1,3 @@
-https://kibo13.github.io/wbk-advoagency/
-
-change link to the site skinali
-
 <h1>
   <img 
     src="https://image.flaticon.com/icons/svg/1750/1750353.svg" 
