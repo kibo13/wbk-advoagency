@@ -3,7 +3,7 @@
     src="https://image.flaticon.com/icons/svg/1750/1750353.svg" 
     height="32"
     alt="LOGO"/>
-    AdvoAgency
+    Вёрстка сайта "AdvoAgency"
 </h1> 
 
 <strong><em>`Задача:`</em></strong> разработать адаптивный сайт под современные браузеры и мобильные устройства<br>
